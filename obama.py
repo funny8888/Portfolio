@@ -6,7 +6,7 @@ red = (217, 26, 33)
 lightBlue = (112, 150, 158)
 yellow = (252, 227, 166)
 
-# Import image.
+# Import image
 my_image = Image.open("IMAGENAME") #change IMAGENAME to the path on your computer to the image you're using
 image_list = my_image.getdata() #each pixel is represented in the form (red value, green value, blue value, transparency). You don't need the fourth value.
 image_list = list(image_list) #Turns the sequence above into a list. The list can be iterated through in a loop.
