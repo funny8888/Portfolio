@@ -2,6 +2,7 @@ from PIL import Image
 #python3 -m pip install Pillow
 
 # RGB values for recoloring.
+
 darkBlue = (0, 51, 76)
 red = (217, 26, 33)
 lightBlue = (112, 150, 158)
@@ -11,7 +12,7 @@ yellow = (252, 227, 166)
 my_image = Image.open("me.jpg") #change IMAGENAME to the path on your computer to the image you're using
 image_list = my_image.getdata() #each pixel is represented in the form (red value, green value, blue value, transparency). You don't need the fourth value.
 image_list = list(image_list) #Turns the sequence above into a list. The list can be iterated through in a loop.
-
+ 
 recolored = [] #list that will hold the pixel data for the new image.
 #YOUR CODE to loop through the original list of pixels and build a new list based on intensity should go here.
 length = len(image_list)
