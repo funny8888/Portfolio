@@ -7,7 +7,7 @@ serina = Turtle()
 
 # Set Up your screen and starting position.
 penup()
-speed(100000000000)
+speed(0)
 x_pos = -300
 y_pos = -300
 goto(x_pos, y_pos)
