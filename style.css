@@ -1,9 +1,44 @@
 h1
 {
 	text-align: center;
+	background-color: white;
+	padding: 25px;
 }
+
 body
 {
-	background-color: lightblue;
+  background-color: #01426a;
+  padding: 20px;
+}
+
+.text_paragraph
+{
+	border: 2px;
+    background-color: white;
+    height: 200px;
+    width: 1200px;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text_single_line
+{
+	color: #ffffff;
 	text-align: center;
+}
+
+/*separate blue box*/
+div
+{
+  background-color: #01426a;
+  padding: 20px;
+}
+
+button {
+  font-family: "Open Sans";
+  background-color: #ece81a;
+  border: none;
+  color: #01426a;
+  padding: 5px 10px 5px 10px;
 }
