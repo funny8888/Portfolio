@@ -1,31 +1,34 @@
-h1
+.text_paragraph
 {
-	text-align: center;
-	background-color: white;
-	padding: 25px;
+  border: 2px;
+  background-color: white;
+  height: 200px;
+  width: 1200px;
+  padding: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text_single_line
+{
+  color: #ffffff;
+  text-align: center;
+}
+
+.header
+{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  background-image: url("https://funny8888.github.io/Portfolio/Photos/backdrop.jpg");
+  /*padding: 400px;*/
+  height: 5263px;
+  width: 3509px;
 }
 
 body
 {
   background-color: #01426a;
   padding: 20px;
-}
-
-.text_paragraph
-{
-	border: 2px;
-    background-color: white;
-    height: 200px;
-    width: 1200px;
-    padding: 40px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.text_single_line
-{
-	color: #ffffff;
-	text-align: center;
 }
 
 /*separate blue box*/
