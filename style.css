@@ -1,9 +1,11 @@
+/*paragraphs*/
+
 .text_paragraph
 {
   border: 2px;
   background-color: white;
   height: 200px;
-  width: 1200px;
+  width: 1256px;
   padding: 40px;
   margin-right: auto;
   margin-left: auto;
@@ -15,30 +17,47 @@
   text-align: center;
 }
 
-.header
+.container 
 {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-align: center;
-  background-image: url("https://funny8888.github.io/Portfolio/Photos/backdrop.jpg");
-  /*padding: 400px;*/
-  height: 5263px;
-  width: 3509px;
+    position: relative;
 }
 
+.center_image 
+{
+    /*font*/
+    font-family: Courier, "Courier New", Georgia, sans-serif;
+    text-align: center;
+    font-size: 800%;
+    letter-spacing: 30px;
+    color: white;
+
+    /*for forming the writing "box"*/
+    width: 100%;
+    height: auto%;
+    position: absolute;
+
+    /*where the box is placed*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*separate blue box*/
+.box
+{
+  background-color: #01426a;
+  padding: 20px;
+}
+
+/*general*/
 body
 {
   background-color: #01426a;
   padding: 20px;
 }
 
-/*separate blue box*/
-div
+button 
 {
-  background-color: #01426a;
-  padding: 20px;
-}
-
-button {
   font-family: "Open Sans";
   background-color: #ece81a;
   border: none;
