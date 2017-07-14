@@ -11,6 +11,17 @@
   margin-left: auto;
 }
 
+.text_project
+{
+  border: 2px;
+  background-color: white;
+  height: 20px;
+  width: 1256px;
+  padding: 10px 40px 40px 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .text_single_line
 {
   color: #ffffff;
