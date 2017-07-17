@@ -62,10 +62,10 @@
 
 /*tabs*/
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 96.5%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 96.5%;
 }
 
 .tab_button
@@ -76,8 +76,8 @@
   cursor: default;
   text-decoration: none;
   border: none;
-  color: #01426a;
-  padding: 5px 20px 20px 5px;
+  padding: 5px 30px 5px 30px;
+  /*margin-right: 20%;*/
 }
 
 /*general*/
@@ -92,12 +92,8 @@ button
   font-family: "Open Sans";
   background-color: #ece81a;
   border: none;
-  color: #01426a;
+  text-align: center;
   padding: 5px 10px 5px 10px;
-}
-
-button a
-{
   text-decoration: none;
   text-align: center;
 }
