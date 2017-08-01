@@ -72,9 +72,8 @@
 /*tabs*/
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
   width: 96.5%;
+  margin-bottom:;
 }
 
 .tab_button

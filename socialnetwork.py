@@ -41,7 +41,7 @@ class User:
     # the one who responds uses this method
     def message (self):
     	responses = ["I'm hungry. Are you?", "Pika pika!", "Have you seen the DNA Pokemon yet? It's pretty cool.", 
-    	"Always watching", "No eyes.", "Go to sleep", "Yare yare daze.", "Yare yare daza.", "He is the Rake.", "*blinks", 
+    	"Always watching", "No eyes.", "Go to sleep", "Yare yare daze.", "Yare yare daza.", "He is the Rake.", "*blinks*", 
     	"We should grab lunch together sometimes.", "go to SLEEP it's too early", ". . .", "but that's none of my business",
     	"I got power, poison, pain and joy inside my DNA\nI got hustle though, ambition, flow, inside my DNA"]
     	return random.choice(responses)
