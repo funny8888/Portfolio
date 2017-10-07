@@ -116,6 +116,11 @@
   font-size: 600%;
 }
 
+li.contact
+{
+  font-family:'Stencil Std', fantasy;
+}
+
 ul.circle
 {
   list-style-type: circle;
