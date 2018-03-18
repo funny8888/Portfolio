@@ -16,35 +16,28 @@ window.onload = init;
 
 function checkPassword() 
 {
-	var numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
- 	var password = document.getElementById("pw").value.toLowerCase();
- 	var num1 = 0;
- 	var num2 = 0;
- 	var num3 = 1;
- 	//num1 = dictionary word
- 	//num2= not long enough
- 	//num3= no number
+  var numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+  var password = document.getElementById("pw").value.toLowerCase();
+  var num1 = 0;
+  var num3 = 1;
+  var finals = "";
+  //num1 = dictionary word
+  //num2= not long enough
+  //num3= no number
 
   //checks dictionary
- 	for(var x = 0; x < wordsList.length; x++)
- 	{
-        if (password == wordsList[x])
- 		{
- 			num1= 1;
- 			x = wordsList.length;
- 			document.getElementById("results").innerHTML = "Nope.";
- 		}
- 	}
-
-  //checks length
-  if (password.length < 12)
+  for(var x = 0; x < wordsList.length; x++)
   {
-    num2 = 1;
+        if (password == wordsList[x])
+    {
+      num1= 1;
+      x = wordsList.length;
+      document.getElementById("results").innerHTML = "Nope.";
+    }
   }
 
-
- 	//checks for number
- 	for(var y = 0; y < numbers.length; y++) 
+  //checks for number
+  for(var y = 0; y < numbers.length; y++) 
   {
     for(var w = 0; w < password.length; w++)
     {
@@ -57,52 +50,47 @@ function checkPassword()
       }
     }
   }
-
-  var final = "That works!";
-
-  //num1, num2, num3 == 0
-  //num1, num2, num3 == 1
-  //num1, num2 == 1 & num3 == 0
-  //num1, num3 == 1 & num2 == 0
-  //num2, num3 == 1 & num1 == 0
-  //num1 == 1
-  //num2 == 1
-  //num3 == 1
-
- 	if (num1 == 0 && num2 == 0 && num3 == 0)
- 	{
- 		finals = "That works!";
- 	}
-  else if (num1 == 1 && num2 == 1 && num3 == 1)
+  
+  if (num3 == false)
   {
-    finals = "Your password does not have any numbers, is not long enough, and contains a dictionary word."
+    finals+="Your password successfully contains a number.";
   }
-  else if (num1 == 1 && num2 == 1)
+  else
   {
-    finals = "Your password contains a dictionay word, and is too short."
+    finals+="Your password must contain a number.";
   }
-  else if (num1 == 1 && num3 == 1)
+  
+  if (num1 == true)
   {
-    finals = "Your password contains a dictionary word, and does not have any numbers."
+    finals+=" Your password is a dictionary word.";
   }
-  else if (num2 == 1 && num3 == 1)
+  else
   {
-    finals = "Your password is too short, and does not have any numbers."
+    finals+=" Your password is not a dictionary word.";
   }
-  else if (num1 == 1)
+  
+  
+  //place your code here
+  if (password.length >= 7 && password.length < 12)
   {
-    finals = "Your password contains a dictionary word."
+    finals+=" Your password is long enough.";
   }
-  else if (num2 == 1)
+  else
   {
-    finals = "Your password is too short."
+    finals+=" Your password length is insufficient.";
   }
-  else if (num3 == 1)
+  
+  var apple = password.charAt(password.length-1);
+  if (apple == '!' || apple == '@' || apple == '#' || apple == '$' || apple == '%' || apple =='*')
   {
-    finals = "Your password doesn't have any numbers."
+    finals+=" Your password ends with a special character.";
   }
+  else
+  {
+    finals+=" Your password does not end with a special character.";
+  }
+  //end your code here
   document.getElementById("results").innerHTML = finals;
 }
-
 
 
